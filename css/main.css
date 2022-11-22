@@ -40,11 +40,13 @@ header p{
 }
 .score-container{
   padding-left: 35px;
+  margin-bottom: 20px;
 }
 .mid-section{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 20px;
   align-items: center;
   background-color:darkslateblue;
   height: 70px;
@@ -58,14 +60,17 @@ header p{
   padding-top: 7px;
   padding-bottom: 7px;
 }
+.selection-container{
+  margin-bottom: 100px;
+}
 footer{
   display: flex;
   margin-top: 20px;
-  padding: 5.7px;
+  padding: 6.8px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: aliceblue;
   background-color: rgb(35, 34, 34);
-  border-radius:10px 10px 10px 10px;
+  border-radius:10px 10px 0 0;
 }
