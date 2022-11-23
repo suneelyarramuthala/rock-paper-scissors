@@ -34,8 +34,8 @@ header p{
   padding: 10px;
 }
 .card{
-  height: 90px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   font-size: 60px;
 }
 .tile{
@@ -73,7 +73,27 @@ header p{
   padding-bottom: 7px;
 }
 .selection-container{
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+}
+.reset-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset-container button{
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(255, 45, 45);
+  border-radius: 5px;
+  color: beige;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  box-shadow: 4px 4px 8px rgb(141, 3, 3);
+}
+.reset-container button:hover{
+  background-color: rgb(88, 88, 249);
+  color: black;
+  box-shadow: 4px 4px 8px rgb(0, 0, 180);
 }
 footer{
   display: flex;
@@ -88,4 +108,64 @@ footer{
   color: aliceblue;
   background-color: rgb(35, 34, 34);
   border-radius:10px 10px 0 0;
+}
+@media screen and (min-width: 348px) {
+  .section-position{
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .card{
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
+  }
+  .score-container{
+    padding-left: 55px;
+    margin-bottom: 20px;
+  }
+  .reset-container button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .mid-section p{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .section-position{
+    justify-content: center;
+    gap: 130px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .card{
+    height: 110px;
+    width: 110px;
+    font-size: 80px;
+  }
+  .score-container{
+    padding-left: 120px;
+    margin-bottom: 20px;
+  }
+  .top-title{
+    font-size: x-large;
+  }
+  .title-discription{
+    font-size: medium;
+  }
+  header{
+    height: 110px;
+  }
+  .mid-section{
+    margin: auto;
+    width: 60%;
+  }
+  
+  .mid-section p{
+    font-size: large;
+  }
 }
