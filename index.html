@@ -24,21 +24,21 @@
           <div class="card">🖥️</div>
         </div>
         <div class="score-container section-position">
-          <div class="card">0</div>
+          <div class="card" id="your-score">0</div>
           <div class="card"></div>
-          <div class="card">0</div>
+          <div class="card" id="system-score">0</div>
         </div>
         <div class="mid-section">
-          <p>System chose rock you chose paper you won</p>
+          <p id="result-message">Result Message</p>
           <p>choose one of the option below</p>
         </div>
         <div class="selection-container section-position">
-          <div class="card tile">🪨</div>
-          <div class="card tile">📃</div>
-          <div class="card tile">✂️</div>
+          <div class="card tile" onclick="rock()">🪨</div>
+          <div class="card tile" onclick="paper()">📃</div>
+          <div class="card tile" onclick="scissors()">✂️</div>
         </div>
         <div class="reset-container">
-          <button>Reset</button>
+          <button onclick="reset()">Reset</button>
         </div>
       </main>
       <footer>
