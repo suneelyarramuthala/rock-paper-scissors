@@ -11,15 +11,15 @@ function rock() {
   console.log(computerChoice);
   if (computerChoice == 0) {
     console.log("rock");
-    message = "System choice Rock and your Choice is Rock so it's a tie.";
+    message = "You : ROCK | system : ROCK | TIE.";
   } else if (computerChoice == 1) {
     console.log("paper");
     sScore += 1;
-    message = "Your Choice is Rock and system Choice is paper so you lost.";
+    message = "You : ROCK | system : PAPER | LOST.";
   } else {
     console.log("scissors");
     yScore += 1;
-    message = "Your Choice is Rock and system Choice is scissors so you won.";
+    message = "You : ROCK | system : SCISSORS | WON.";
   }
   resultMessage.innerHTML = message;
   yourScore.innerHTML = yScore;
@@ -31,14 +31,14 @@ function paper() {
   if (computerChoice == 0) {
     console.log("rock");
     yScore += 1;
-    message = "System choice Rock and your Choice is paper so so you won.";
+    message = "You : PAPER | system : ROCK | WON.";
   } else if (computerChoice == 1) {
     console.log("paper");
-    message = "Your Choice is paper and system Choice is paper so it's a tie.";
+    message = "You : PAPER | system : PAPER | TIE.";
   } else {
     console.log("scissors");
     sScore += 1;
-    message = "Your Choice is paper and system Choice is scissors so you lost.";
+    message = "You : PAPER | system : SCISSORS | LOST.";
   }
   resultMessage.innerHTML = message;
   yourScore.innerHTML = yScore;
@@ -49,15 +49,14 @@ function scissors() {
   if (computerChoice == 0) {
     console.log("rock");
     sScore += 1;
-    message = "System choice Rock and your Choice is scissors so you lost.";
+    message = "You : SCISSORS | system : ROCK | LOST.";
   } else if (computerChoice == 1) {
     console.log("paper");
     yScore += 1;
-    message = "Your Choice is scissors and system Choice is paper so you won.";
+    message = "You : SCISSORS | system : PAPER | WON.";
   } else {
     console.log("scissors");
-    message =
-      "Your Choice is scissors and system Choice is scissors so its a tie.";
+    message = "You : SCISSORS | system : SCISSORS | TIE.";
   }
   resultMessage.innerHTML = message;
   yourScore.innerHTML = yScore;
@@ -66,7 +65,7 @@ function scissors() {
 function reset() {
   yScore = 0;
   sScore = 0;
-  message = "Result Message";
+  message = "You : ---- | system : ---- | RESULT.";
   resultMessage.innerHTML = message;
   yourScore.innerHTML = yScore;
   systemScore.innerHTML = sScore;
